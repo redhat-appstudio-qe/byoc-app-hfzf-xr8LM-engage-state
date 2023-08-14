@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ahud
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-kdbo-tenant/byoc-app-hfzf/ahud@sha256:7f1b7f869a6cde1a0d8682a9c7ba913c2de0faab530eb7f974e0f4c8957d4bf8
+        name: my-java-quarkus
+        resources: {}
+status: {}
