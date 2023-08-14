@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ahud
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-kdbo-tenant/byoc-app-hfzf/ahud@sha256:7f1b7f869a6cde1a0d8682a9c7ba913c2de0faab530eb7f974e0f4c8957d4bf8
         name: my-java-quarkus
         ports:
         - containerPort: 8081
